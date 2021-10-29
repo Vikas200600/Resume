@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+@font-face {
+    font-family: "NexaBold";
+    src: url(../fonts/Nexa-Bold.otf);
+}
+
+@font-face {
+    font-family: "NexaLight";
+    src: url(../fonts/Nexa-Light.otf);
+}
+
+:root {
+    --black : #000;
+    --white : #fff;
+    --dullWhite : #F5F5F5;
+
+    --lightBlue : #9cbfda;
+    --brightBlue : #0173b2;
+    --darkBlue : #021433;
+    --bgBlue : #8fcaf1;
+    --lighterBlue : #eeebeb;
+
+    --Gray: #636668;
+    --lightGray: #ccc;
+    --darkGray: #525659;
+    --mixGray: #777;
+}
+
+body {
+    font-family: NexaLight;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    letter-spacing: .1rem;
+}

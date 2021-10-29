@@ -1,0 +1,30 @@
+.head {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: var(--lightBlue);
+    color: var(--white);
+    padding: 1rem;
+    border-bottom-right-radius: 30%;
+    &-profile {
+        justify-self: end;
+        div {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            grid-gap: .5rem;
+            i {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+.inline {
+    display: flex;
+    grid-gap: .5rem;
+    align-items: flex-end;
+    p {
+        font-size: .8rem;
+    }
+}

@@ -1,0 +1,49 @@
+.head {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.5fr 1fr;
+      grid-template-columns: 1.5fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  background-color: var(--lightBlue);
+  color: var(--white);
+  padding: 1rem;
+  border-bottom-right-radius: 30%;
+}
+
+.head-profile {
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.head-profile div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: .5rem;
+}
+
+.head-profile div i {
+  font-size: 1.2rem;
+}
+
+.inline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-gap: .5rem;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.inline p {
+  font-size: .8rem;
+}
+/*# sourceMappingURL=resume.css.map */
