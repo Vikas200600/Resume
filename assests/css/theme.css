@@ -37,7 +37,18 @@ body {
 h1 {
     font-size: 2rem;
     font-weight: bold;
+    letter-spacing: .125rem;
 }
+
+h2 {
+    font-family: NexaBold;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .125rem;
+}
+
 
 p {
     font-size: 1rem;
