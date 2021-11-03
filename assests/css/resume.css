@@ -221,8 +221,7 @@ h2 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border: 1px solid var(--darkBlue);
-  border-bottom: 0;
+  border-top: 1px solid var(--darkBlue);
   border-radius: 25px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
