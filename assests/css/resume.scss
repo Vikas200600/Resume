@@ -7,11 +7,11 @@ body {
     }
 }
 
-.heading {
+h2 {
     text-align: right;
     background-color: var(--dullWhite);
-    display: inline;
     border-radius: 25%;
+    display: inline;
 }
 
 .head {
@@ -28,6 +28,7 @@ body {
         img {
             border-top-left-radius: 25px;
             border-bottom-right-radius: 35%;
+            width:150px; height:150px; border: 1px solid var(--darkBlue)
         }
     }
     &-info {
@@ -38,6 +39,11 @@ body {
 .inline {
     display: flex;
     grid-gap: .5rem;
+}
+
+.strong {
+    font-weight: bold;
+    font-family: 'NexaBold';
 }
 
 .about {
@@ -82,6 +88,7 @@ body {
             padding: .3rem .5rem;
             border: 1px solid var(--darkBlue);
             border-radius: 1rem;
+            border-top-left-radius: 0;
         }
     }
     &-icon {
@@ -90,7 +97,7 @@ body {
         flex-wrap: wrap;       
         justify-content: flex-end; 
         margin-right: .5rem;
-        padding-top: 2rem;         
+        padding-top: .7rem;         
         :nth-child(10) {
             position: relative;
             top: -2.4rem;
@@ -104,5 +111,73 @@ body {
                 font-size: 1.2rem;
             }
         }
+    }
+}
+
+.projects {
+    &-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: .2rem;
+        &-card {
+            padding: 1rem;
+            border: 1px solid var(--darkBlue);
+        }
+        > :nth-child(1) {
+            text-align: left;
+            border-left: 0;
+            border-top-right-radius: 40%;
+            border-bottom-right-radius: 25px;
+        }
+        > :nth-child(2) {
+            text-align: right;
+            border-right: 0;
+            border-top-left-radius: 40%;
+            border-bottom-left-radius: 25px;
+        }
+    }
+}
+
+.education {
+    &-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: .5rem;
+        align-items: center;
+        &-card {
+            padding: .8rem;
+            border: 1px solid var(--darkBlue);
+        }
+        > :nth-child(1) {            
+            text-align: center;
+            grid-column: 1 / span 2;
+            grid-row: 1 / 2;
+            border-radius: 10rem;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        > :nth-child(2) {
+            text-align: right;
+            border-bottom-left-radius: 10rem;
+        }
+        > :nth-child(3) {
+            text-align: left;
+            border-bottom-right-radius: 10rem;
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--darkBlue);
+    border-bottom: 0;
+    border-radius: 25px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin: 0 .5rem;
+    p {
+        font-size: .725rem;
     }
 }

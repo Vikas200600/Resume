@@ -34,6 +34,7 @@ body {
     font-family: NexaLight;
 }
 
+
 h1 {
     font-size: 2rem;
     font-weight: bold;
@@ -49,9 +50,32 @@ h2 {
     letter-spacing: .125rem;
 }
 
+h3 {
+    font-family: NexaBold;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: .125rem;
+}
+
+h4 {
+    font-size: .9rem;
+    padding-top: .2rem ;
+    letter-spacing: .1rem;
+}
+
 
 p {
     font-size: 1rem;
     line-height: 1.2rem;
     letter-spacing: .1rem;
+}
+
+.background {
+    font-size: 10rem;
+    position: absolute;
+    top: 15rem;
+    left: 15rem;
+    z-index: -10;
 }
